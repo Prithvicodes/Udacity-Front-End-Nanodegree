@@ -1,0 +1,62 @@
+@media(max-width:600px)
+{
+    .content-about{
+        display:flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        grid-gap: 20px;
+    
+    }
+    
+    .title-one
+    {
+
+        color: black;
+        text-align: left;
+        justify-content: center;
+    }
+    
+    .head-one
+    {
+ 
+        color: black ;
+        text-align: left;
+    }
+    .about-one
+    {
+        padding: 10px;
+    }
+    .about-two
+    {
+        padding: 10px;
+    }
+    .head-two
+    {
+        color: black ;
+        text-align:left;
+    
+    }
+    .about-three
+    {
+
+        padding: 10px;
+    }
+    .about-four
+    {
+
+        padding: 10px;
+    }
+    .about-six
+    {
+
+        padding: 10px;
+    }
+    
+    .about-five
+    {
+
+        padding: 10px;
+    }
+}

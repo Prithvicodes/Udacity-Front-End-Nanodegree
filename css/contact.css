@@ -1,0 +1,133 @@
+
+
+.contact-form 
+{
+    display:grid;
+    grid-template-rows: 70px repeat(5,1fr) 50px;
+    grid-template-areas: "contact "
+                         "name "
+                         "email"
+                        "telephone"
+                        "locations "
+                        "message "
+                        "submit";
+
+    margin: 50px 80px 80px 80px;
+    padding: 60px;
+    grid-gap:20px;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+
+}
+
+.form-element
+{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-name
+{
+    grid-area: contact;
+    margin: 10px;
+    padding: 10px;
+    justify-content: Left;
+    text-align: center;
+}
+
+#name ,#YourName
+{
+   grid-area: name;
+   display:flex;
+   flex-direction: column; 
+   margin: 20px 20px 20px 20px;
+   width: 100%;
+   padding: 10px;
+   border: 2px solid black;
+   border-radius: 10px;
+   box-sizing: border-box;
+   text-align: center;
+   justify-content: center;
+   text-emphasis-color: white;
+  
+}
+#email
+{
+   grid-area: email;
+    display:flex;
+    flex-direction: row; 
+    margin: 20px 20px 20px 20px;
+    width: 100%;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+}
+#telephone
+{
+    grid-area: telephone;
+    display:flex;
+    flex-direction: row; 
+    margin: 20px 20px 20px 20px;
+    width: 100%;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+}
+#locations
+{
+    grid-area: locations;
+    display:flex;
+    flex-direction: row; 
+    margin: 20px 20px 20px 20px;
+    width: 90%;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing:initial;
+    text-align: center;
+    justify-content: center;
+}
+#message
+{
+    grid-area: message;
+    display:flex;
+    flex-direction: row; 
+    margin: 20px 20px 20px 20px;
+    width: 100%;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+}
+
+.submit {
+    grid-area: submit;
+    display:flex;
+    flex-direction: row;
+    position:center;
+    background-color: #4CAF50;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-left: 50px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: teal 5px;
+    cursor: pointer;
+  }
+
+

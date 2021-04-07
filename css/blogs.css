@@ -1,0 +1,104 @@
+.blog-block
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(6,1fr); 
+    grid-template-areas: "blogone blogone"
+                         "blogtwo blogtwo"
+                         "blogthree blogthree"
+                         "blogfour blogfour"
+                         "blogfive blogfive" 
+                         "blogsix  blogsix";
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.blog-one
+{
+    grid-area: blogone;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+
+.blog-one h2,h3,h4
+{
+    text-align: center;
+}
+
+.blog-two
+{
+    grid-area: blogtwo;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.blog-two h2,h3,h4
+{
+    text-align: center;
+}
+.blog-three
+{
+    grid-area: blogthree;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.blog-three h2,h3,h4
+{
+    text-align: center;
+}
+.blog-four
+{
+    grid-area: blogfour;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.blog-four h2,h3,h4
+{
+    text-align: center;
+}
+
+.blog-five
+{
+    grid-area: blogfive;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.blog-five h2,h3,h4
+{
+    text-align: center;
+}
+
+.blog-six
+{
+    grid-area: blogsix;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.blog-six h2,h3,h4
+{
+    text-align: center;
+}
+
+

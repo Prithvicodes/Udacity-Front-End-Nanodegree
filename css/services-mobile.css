@@ -1,0 +1,129 @@
+@media(max-width:600px)
+{
+
+.services
+{
+    display:flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+
+}
+
+figure > img
+{
+
+    width:70vw;
+    height:40vh;
+}
+.titles
+{
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.services-one
+{
+
+    border: 1px solid black;
+}
+
+.services-two
+{
+
+    border: 1px solid black;
+}
+
+.services-three
+{
+
+    border: 1px solid black;
+}
+
+.services-four
+{
+
+    border: 1px solid black;
+}
+}
+
+@media(min-width:601px) and (max-width:900px)
+{
+    .services
+    {
+        display:grid;
+        grid-template-rows: 50px repeat(4,0.5fr);
+        grid-template-areas: "titles"
+                            "service1" 
+                            "service2"
+                            "service3"
+                            "service4";
+        grid-gap: 10px;
+        width: auto;
+        height: auto;
+    }
+    
+    .titles
+    {
+        grid-area: titles;
+        margin: 10px;
+        padding: 10px;
+        
+    }
+    
+    figure > img
+{
+
+    width:70vw;
+    height:40vh;
+}
+    .services-one
+    {
+        grid-area:service1 ;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    
+    .services-two
+    {
+        grid-area:service2 ;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    
+    .services-three
+    {
+        grid-area:service3 ;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    
+    .services-four
+    {
+        grid-area:service4 ;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+    figure{
+        width: vw;
+    };
+    
+    .services > figure > img
+    {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 40px;
+        margin-inline-end: 40px;
+    
+    }
+
+
+
+}

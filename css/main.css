@@ -1,0 +1,120 @@
+@import url("../css/main-mobile.css");
+@import url("../css/about.css");
+@import url("../css/contact.css");
+@import url("../css/blogs.css");
+@import url('../css/blog-mobile.css');
+@import url("../css/services.css");
+@import url("../css/services-mobile.css");
+
+
+
+*{
+    margin:0px;
+    padding:0px;
+    background-color: white;
+}
+
+a{
+    text-decoration: none; 
+}
+
+ul
+{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+p
+{
+    align-content: center;
+    padding: 10px;
+}
+
+.index-body
+{
+    display:grid;
+    grid-template-areas: "header header"
+    "image image"
+    "para para"
+    "footer footer";
+    grid-template-rows: 70px 2fr 1fr 100px;
+    grid-gap: 10px;
+}
+
+header
+{
+    grid-area: header;
+    display:grid;
+    grid-template-areas: "logo nav";
+    grid-template-columns: 50px auto;
+    margin:10px;
+    padding: 5px;
+    position:relative;
+    height: fit-content;
+    background-color:#d763ff;
+
+}
+header a
+{
+    background-color:#d763ff;
+    padding: 5px;
+}
+
+.logo
+{
+    grid-area:logo;
+    align-items:initial;
+    height: fit-content;
+    background-color:#d763ff;
+
+}
+
+.links  
+{
+    grid-area:nav;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content:space-around;
+    align-items:center;
+    height: fit-content;
+    background-color:#d763ff;
+
+}
+
+.main-image
+{
+    grid-area: image;
+    background-image:url('../images/hero-image.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 15px;
+    padding: 20px;
+    height: auto; 
+    width: auto;
+}
+
+.main-content
+{
+    grid-area:para;
+    justify-content:center;
+    align-items: center;
+    margin: 10px;
+    height: auto;
+}
+    
+footer
+{
+    grid-area:footer;
+    display:flex;
+    flex-direction: row;
+    width: 100%vw;
+    margin:30px;
+    padding:10px;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    height: fit-content;
+    border: 1px solid black;
+}

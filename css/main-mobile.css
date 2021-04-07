@@ -1,0 +1,183 @@
+/* rules for small screen */
+
+/* Anything smaller than first breakpoint 600px */
+
+@media(max-width:600px)
+
+{
+
+.index-body
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+        "header"
+        "image"
+         "para"
+        "footer";
+    grid-gap: 5px;
+
+    }
+    
+header
+{
+    grid-area: header;
+    display:grid;
+    grid-template-areas: "logo nav";
+    grid-template-columns: 50px auto;
+    width: vw;
+    margin:10px;
+    padding: 5px;
+    color:white;
+    position:relative;
+    border: 1px solid black;
+    height: fit-content;
+    background-color:#d763ff;
+    }
+    
+.logo
+{
+    grid-area:logo;
+    align-items:initial;
+    height: fit-content;
+    background-color:#d763ff;
+    }
+    
+.links  
+{
+    grid-area:nav;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content:space-around;
+    align-items:center;
+    height: fit-content;
+    background-color: #d763ff;
+    }
+    
+.main-image
+{
+    grid-area: image;
+    background-image: url('../images/hero-image.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    height: fit-content;
+    }
+    
+.main-content
+{
+    grid-area:para;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px;
+    height: fit-content;
+ 
+    }
+    
+footer
+{
+    grid-area:footer;
+    display:flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    margin: 30px;
+    padding:10px;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    height: fit-content;
+    }
+
+  }
+
+
+  /* Screens other than mobiles and computers*/
+    /* Large Screens */
+    @media (min-width:601px) and (max-width:1024px) 
+  
+    {
+      .index-body{
+          display:grid;
+          grid-template-areas: "header header"
+          "image image"
+          "para para"
+          "footer footer";
+          grid-template-rows: 70px auto auto 200px;
+          grid-gap: 5px;
+          height: fit-content;
+      }
+      
+      header
+      {
+          grid-area: header;
+          display:grid;
+          grid-template-areas: "logo nav";
+          grid-template-columns: 50px auto;
+          margin:10px;
+          padding: 10px;
+          color:white;
+          position:relative;
+          border: 1px solid black;
+          height: fit-content;
+          background-color:#d763ff;
+      
+      }
+      
+      .logo{
+          grid-area:logo;
+          align-items:initial;
+          height: fit-content;
+          background-color:#d763ff;
+      
+      }
+      
+      .links  {
+          grid-area:nav;
+          display: flex;
+          flex-direction: row;
+          text-decoration: none;
+          list-style-type: none;
+          justify-content:space-around;
+          align-items:center;
+          height: fit-content;
+          background-color:#d763ff;
+      
+      }
+      
+      .main-image
+      {
+          grid-area: image;
+          background-image:url('../images/hero-image.jpeg');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative;
+          margin: 15px;
+          padding: 10px;
+          border: 1px solid black;
+          height: 50%;
+  
+      }
+
+      footer
+      {
+          grid-area:footer;
+          display:flex;
+          flex-direction: column;
+          width: 100%vw;
+          margin:30px;
+          padding:10px;
+          align-items:flex-start;
+          justify-content: space-evenly;
+          height: fit-content;
+          border: 1px solid black;
+      
+      }
+      }

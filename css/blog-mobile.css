@@ -1,0 +1,143 @@
+@media(max-width:600px)
+{
+
+.blog-block
+{
+    display:flex;
+    flex-direction: column;                
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: white;
+}
+
+.blog-one
+{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.blog-one h2,h3,h4
+{
+    text-align: center;
+}
+
+.blog-two
+{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.blog-two h2,h3,h4
+{
+    text-align: center;
+}
+
+.blog-three
+{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.blog-three h2,h3,h4
+{
+    text-align: center;
+}
+
+.blog-four
+{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.blog-four h2,h3,h4
+{
+    text-align: center;
+}
+
+.blog-five
+{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.blog-five h2,h3,h4
+{
+    text-align: center;
+}
+
+.blog-six
+{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.blog-six h2,h3,h4
+{
+    text-align: center;
+}
+}
+
+@media(min-width:601px) and (max-width:900px)
+{
+
+.blog-block
+{
+display: grid;
+grid-template-rows:repeat(6,1fr); 
+grid-template-areas: "blogone"
+                     "blogtwo"
+                     "blogthree"
+                     "blogfour"
+                     "blogfive"
+                     "blogsix";
+margin-right: 300px;
+justify-content: center;
+align-items: center;
+background-color: white;
+}
+
+.blog-one
+{
+grid-area: blogone;
+border: 1px solid black;
+border-radius: 5px;
+}
+
+.blog-two
+{
+grid-area: blogtwo;
+border: 1px solid black;
+border-radius: 5px;    
+}
+
+.blog-three
+{
+grid-area: blogthree;
+border: 1px solid black;
+border-radius: 5px;
+    
+}
+.blog-four
+{
+grid-area: blogfour;
+border: 1px solid black;
+border-radius: 5px;
+}
+    
+.blog-five
+{
+grid-area: blogfive;
+border: 1px solid black;
+border-radius: 5px;
+    
+}
+.blog-six
+{
+grid-area: blogsix;
+border: 1px solid black;
+border-radius: 5px;
+}   
+
+}

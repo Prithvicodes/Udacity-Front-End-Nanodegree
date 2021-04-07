@@ -1,0 +1,72 @@
+.content-about{
+    display:grid;
+    grid-template-rows: 50px 50px repeat(2,1fr) 50px repeat(2,1fr); 
+    grid-template-areas: 
+    "title"
+    "head1"
+    "one "
+    "two"
+    "head2"
+    "three"
+    "four"
+    "five"
+    "six";
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    grid-gap: 20px;
+
+}
+
+.title-one
+{
+    grid-area: "title";
+    color: black;
+    text-align: left;
+    justify-content: center;
+}
+
+.head-one
+{
+    grid-area:"head1";
+    color: black ;
+    text-align: left;
+}
+.about-one
+{
+    grid-area:one;
+    padding: 10px;
+}
+.about-two
+{
+    grid-area:two;
+    padding: 10px;
+}
+.head-two
+{
+    grid-area: "title";
+    color: black ;
+    text-align:left;
+
+}
+.about-three
+{
+    grid-area: three;
+    padding: 10px;
+}
+.about-four
+{
+    grid-area: four;
+    padding: 10px;
+}
+.about-six
+{
+    grid-area: six;
+    padding: 10px;
+}
+
+.about-five
+{
+    grid-area:five;
+    padding: 10px;
+}

@@ -1,0 +1,59 @@
+.services
+{
+    display:grid;
+    grid-template-rows: 50px repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "titles   titles"
+                        "service1 service2"
+                        "service3 service4";
+    grid-gap: 10px;
+    margin-bottom: 1000px;
+    
+   
+}
+
+figure
+{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+
+}
+
+.titles
+{
+    grid-area: titles;
+    padding: 20px;
+    
+}
+.services-one
+{
+    grid-area:service1 ;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.services-two
+{
+    grid-area:service2 ;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.services-three
+{
+    grid-area:service3 ;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.services-four
+{
+    grid-area:service4 ;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
